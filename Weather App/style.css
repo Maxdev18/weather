@@ -1,0 +1,69 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Global*/
+body {
+    background: linear-gradient(to right, blue, orange);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Container*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*ZipCode*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.zipcode {
+    margin-bottom: 80px;
+}
+
+.zipcode input {
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    background: rgba(255, 255, 255, .7);
+}
+
+.zipcode input:hover {
+    background: rgba(255, 255, 255, 1);
+    transition: 300ms;
+}
+
+/*Location and Temperature*/
+.location-temp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+}
+
+.locationText, #temperature {
+    font-size: 3rem;
+}
+
+#temperature{ 
+    cursor: pointer;
+}
+
+/*Status*/
+.status {
+    margin-top: 40px;
+    font-size: 2rem;
+}
